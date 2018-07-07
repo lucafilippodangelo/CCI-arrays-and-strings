@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.8 Zero Matrix", "1.8 Zero
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.9 String Rotation", "1.9 String Rotation\1.9 String Rotation.csproj", "{75591ECC-B04F-489A-A31C-7C157ADF6A3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1_Is_Unique_UT", "1.1_Is_Unique_UT\1.1_Is_Unique_UT.csproj", "{C817F2C5-5182-4081-841B-FEC73D69B725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{75591ECC-B04F-489A-A31C-7C157ADF6A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75591ECC-B04F-489A-A31C-7C157ADF6A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75591ECC-B04F-489A-A31C-7C157ADF6A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C817F2C5-5182-4081-841B-FEC73D69B725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C817F2C5-5182-4081-841B-FEC73D69B725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C817F2C5-5182-4081-841B-FEC73D69B725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C817F2C5-5182-4081-841B-FEC73D69B725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

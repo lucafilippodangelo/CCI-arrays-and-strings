@@ -2,11 +2,11 @@
 
 namespace _1._1_Is_Unique
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Implementation.printSomething();
+            Implementation.ImplementationOne("aeiouy");
             Console.ReadLine();
         }
     }
