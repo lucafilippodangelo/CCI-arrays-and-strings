@@ -6,7 +6,10 @@ namespace _1._1_Is_Unique
 {
     public static class Implementation
     {
-        public static void printSomething() {
+        //STRING TO BE SUBSTITUTE BY UT
+
+        public static void ImplementationOne() {
+
             Console.WriteLine("test");
 
         }
