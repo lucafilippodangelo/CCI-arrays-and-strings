@@ -6,7 +6,8 @@ namespace _1._1_Is_Unique
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Implementation.printSomething();
+            Console.ReadLine();
         }
     }
 }

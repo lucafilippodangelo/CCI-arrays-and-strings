@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1 Is Unique", "1.1 Is Unique\1.1 Is Unique.csproj", "{58F76E71-41E7-41BE-B7D3-5731C6F5A636}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1_Is_Unique", "1.1 Is Unique\1.1_Is_Unique.csproj", "{58F76E71-41E7-41BE-B7D3-5731C6F5A636}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2 Check Permutation", "1.2 Check Permutation\1.2 Check Permutation.csproj", "{FE807BF4-4545-4E86-925C-7282C1DB143B}"
 EndProject
