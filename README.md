@@ -1,7 +1,8 @@
+# Arrays and Strings 
+Cracking the Coding Interview
 
-# Arrays and Strings ### Cracking the Coding Interview
-
-## 1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures? 
+## 1.1 Is Unique: 
+Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures? 
 - Different approaches implemented
 - Code commented
 - Added Unit Tests
