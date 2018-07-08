@@ -31,23 +31,27 @@ namespace _1._1_Is_Unique
         public static Boolean ImplementationTwo(string str)
         {
             {
-                if (str.Length > 256)
-                {
-                    return false;
-                }
+                Console.WriteLine(str + " ------------------------------------------- "); 
+                if (str.Length > 256) {return false;}
 
                 var checker = 0;
                 for (var i = 0; i < str.Length; i++)
                 {
-                    var val = str[i] - 'a';
+                    var val = str[i] - 'a'; Console.WriteLine("str[i]: " + str[i] ); Console.WriteLine("val: " + val);
 
+                    Console.WriteLine("checker: " + checker); Console.WriteLine(" 1 << val: " + (1 << val));
                     if ((checker & (1 << val)) > 0)
                     {
                         Console.WriteLine("match found");//LD return true if duplicate found
                         return true;
                     }
 
+                    //LD The | operator performs a bitwise logical OR 
+                    // operation on integral operands and logical OR on bool operands
                     checker |= (1 << val);
+
+                    Console.WriteLine("checker: "+ checker);
+                    Console.WriteLine(""); 
                 }
 
                 return false;
@@ -61,11 +65,11 @@ namespace _1._1_Is_Unique
             var hashset = new HashSet<char>();
             foreach (var c in str)
             {
-                if (hashset.Contains(c)) return false;
+                if (hashset.Contains(c)) return true;
                 hashset.Add(c);
             }
 
-            return true;
+            return false;
         }
 
     }
