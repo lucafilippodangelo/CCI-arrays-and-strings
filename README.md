@@ -1,4 +1,3 @@
-Cracking the Coding Interview
 # Arrays and Strings 
 
 ## 1.1 Is Unique: 
@@ -13,9 +12,9 @@ USEFUL LINKS:
 - difference between ASCII and UNICODE http://www.differencebetween.net/technology/software-technology/difference-between-unicode-and-ascii/
 
 ## 1.2 Check Permutations: 
-Given two strings, write a method to decide if one is a permutation of the other
-- Different approaches implemented
-  - Nested For
-  - Bit Vector
-  - Hash Table
-- Added Unit Tests project "1.1_Is_Unique_UT"
+Given two strings, write a method to decide if one is a permutation of the other.
+Note: permutation means same caracters but in different order.
+- In order to check if the two strings were identical I had two approaches
+  - Loop in the one input string and use a dictionary to store cardinality of key values, loop in the second string and decrease from the dictionary the occurrences. If at the end of the loops the dictionary is empty we have permutation.
+  - Convert the string in "CharArray", sort the two arrays, convert the to array in strings and compare if they are identical.
+- Added Unit Tests project "1.2 Check Permutation_UT"

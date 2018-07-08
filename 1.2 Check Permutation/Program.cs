@@ -6,7 +6,8 @@ namespace _1._2_Check_Permutation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Implementation.CheckPermutationOne("abcdeee", "eeedcba");//LD just this is permutation
+            Implementation.CheckPermutationOne("abcdef", "gedcba");
         }
     }
 }
