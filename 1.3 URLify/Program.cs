@@ -6,7 +6,10 @@ namespace _1._3_URLify
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string aString = "ab  cdee e";
+            
+
+            string ff =Implementation.replaceSpacesInInputStringOne(aString);
         }
     }
 }
