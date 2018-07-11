@@ -22,9 +22,13 @@ Note: permutation means same caracters but in different order.
 ## 1.3 URLify:
 Write a method to replace all spaces in the input string with '__'
 Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+Solution:
 - In my approach I did use a char[], gave it the new dimension and played with the index.
 - Added Unit Tests project "1.3 URLify_UT"
 
+## 1.4 Palindrome Permutation:
+Given an input string, write a function to check if it is a permutation of a palindrome.
+Note: A palindrome is a word or phrase that is the same forwards and backwards. A permutation is a rearrangment of letters.
 
-
-- 
+Useful:
+- Find all the permutations of a given string: https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
