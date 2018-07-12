@@ -6,16 +6,9 @@ namespace _1._4_Palindrome_and_Permutation
 {
     class Implementation
     {
-    public static int GetCharNumber(char c)
-    {
-        var val = char.ToLower(c) - 'a';
-        if (0 <= val && val <= 25)
-        {
-            return val;
-        }
-        return -1;
-    }
 
+    //LD it could be possible to use a dictionary instead of an array
+    // like in "_1._2_Check_Permutation" -> "CheckPermutationOne"
     public static int[] BuildCharFrequencyTable(String phrase)
     {
         int[] table = new int[26];
@@ -30,8 +23,28 @@ namespace _1._4_Palindrome_and_Permutation
         return table;
     }
 
+    public static int GetCharNumber(char c)
+    {
+        var val = char.ToLower(c) - 'a';
+        if (0 <= val && val <= 25)
+        {
+            return val;
+        }
+        return -1;
+    }
+
+    /*
+     * Count of how many time each caracter appear. Then ensure no more than one caracter has odd count
+     */
     #region Solution 1
 
+    public static bool IsPermutationOfPalindrome(String phrase)
+    {
+        int[] table = BuildCharFrequencyTable(phrase);
+        return CheckMaxOneOdd(table);
+    }
+
+    //LD this method return true only if one odd. We loop the full array of values.
     public static bool CheckMaxOneOdd(int[] table)
     {
         bool foundOdd = false;
@@ -49,14 +62,11 @@ namespace _1._4_Palindrome_and_Permutation
         return true;
     }
 
-    public static bool IsPermutationOfPalindrome(String phrase)
-    {
-        int[] table = BuildCharFrequencyTable(phrase);
-        return CheckMaxOneOdd(table);
-    }
-
     #endregion Solution 1
 
+    /*
+        Improvement of "solution 1" 
+    */
     #region Solution 2
 
     public static bool IsPermutationOfPalindrome2(String phrase)
@@ -85,7 +95,10 @@ namespace _1._4_Palindrome_and_Permutation
 
         #endregion Solution 2
 
-        #region Solution 3
+    /*
+         
+    */
+    #region Solution 3
 
     public static bool IsPermutationOfPalindrome3(String phrase)
     {
@@ -93,9 +106,21 @@ namespace _1._4_Palindrome_and_Permutation
             return bitVector == 0 || CheckExactlyOneBitSet(bitVector);
     }
 
-        /* Toggle the ith bit in the integer. */
+    /* Create bit vector for string. For each letter with value i,
+     * toggle the ith bit. */
+        public static int MarkBitForOddCharacterCount(String phrase)
+        {
+            int bitVector = 0;
+            foreach (char c in phrase.ToCharArray())
+            {
+                int x = GetCharNumber(c);
+                bitVector = Toggle(bitVector, x);
+            }
+            return bitVector;
+        }
 
-    public static int Toggle(int bitVector, int index)
+        /* Toggle the ith bit in the integer. */
+        public static int Toggle(int bitVector, int index)
     {
         if (index < 0) return bitVector;
 
@@ -107,20 +132,6 @@ namespace _1._4_Palindrome_and_Permutation
         else
         {
             bitVector &= ~mask;
-        }
-        return bitVector;
-    }
-
-    /* Create bit vector for string. For each letter with value i,
-     * toggle the ith bit. */
-
-    public static int MarkBitForOddCharacterCount(String phrase)
-    {
-        int bitVector = 0;
-        foreach (char c in phrase.ToCharArray())
-        {
-            int x = GetCharNumber(c);
-            bitVector = Toggle(bitVector, x);
         }
         return bitVector;
     }
