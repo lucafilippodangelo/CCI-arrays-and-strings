@@ -15,6 +15,7 @@ USEFUL LINKS:
 ## 1.2 Check Permutations: 
 Given two strings, write a method to decide if one is a permutation of the other.
 Note: permutation means same caracters but in different order.
+
 SOLUTION:
 - In order to check if the two strings were identical I had two approaches
   - Loop in the one input string and use a dictionary to store cardinality of key values, loop in the second string and decrease from the dictionary the occurrences. If at the end of the loops the dictionary is empty we have permutation.
@@ -24,6 +25,7 @@ SOLUTION:
 ## 1.3 URLify:
 Write a method to replace all spaces in the input string with '__'
 Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+
 SOLUTION:
 - In my approach I did use a char[], gave it the new dimension and played with the index.
 - Added Unit Tests project "1.3 URLify_UT"
@@ -53,11 +55,15 @@ the given string "tactcoapapa" is a palindrome permutation, because is composed 
 - #1 "o" -> only one odd
 
 SOLUTION:
+- EASY: use an array big as the alphabet to count how many time each character appears, then iterate through the hash table and ensure that at most just one character has odd count.
+- ELEGANT: Using bit manipulation. We don't need to know the count, it's enough to know if the count is even or odd. 
+The idea is to flip a toggle on or off each time the state change. Whe can't know how many flips but we will know if at the end we have an odd count
 
 Useful:
 - Find all the permutations of a given string: https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
-- bit vector 
+  - https://www.calculator.net/binary-calculator.html
+  - Bit Shift http://etutorials.org/cert/java+certification/Chapter+3.+Operators+and+Assignments/3.14+Shift+Operators+lt+lt+gt/
   - https://www.webucator.com/blog/2010/12/net-framework-using-the-bitvector32-structure/
-  - http://www.anotherchris.net/csharp/csharp-bit-manipulation-by-example-part-2/
+  - Bit Manipulation http://www.anotherchris.net/csharp/csharp-bit-manipulation-by-example-part-2/
   - https://www.i-programmer.info/programming/c/1281-c-bit-bashing-the-bitconverter.html
   - https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/left-shift-operator

@@ -6,9 +6,17 @@ namespace _1._4_Palindrome_and_Permutation
     {
         public static void Main(string[] args)
         {
-            bool b = Implementation.IsPermutationOfPalindrome3("ada");
+            //LD TESTS
+            /*
+            Implementation.OR();
+            Implementation.AND();
+            Implementation.SHIFTLEFT();
+            */
+           
+            bool b = Implementation.IsPermutationOfPalindrome("Tacotac");
             bool sb = Implementation.IsPermutationOfPalindrome3("Tacotac");
             
+            Console.ReadLine();
         }
     }
 }
