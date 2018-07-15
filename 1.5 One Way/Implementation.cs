@@ -6,6 +6,7 @@ namespace _1._5_One_Way
 {
     public class Implementation
     {
+        //LD main method
         public static bool OneEditAway(String first, String second)
         {
             if (first.Length == second.Length)

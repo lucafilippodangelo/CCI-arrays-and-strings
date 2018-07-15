@@ -71,21 +71,23 @@ Useful:
   
 ## 1.5 One Way:
 Considering the possibility to add, remove or edit a character in strings. Given two input strings write a method to check if they are max one edit away.
+
 Example: 
-pale, ple -> true
-pales, pale -> true
-pale, bale -> true
-pale, bae -> false
+- pale, ple -> true
+- pales, pale -> true
+- pale, bale -> true
+- pale, bae -> false
 
 SOLUTION:
-- Code commented
-## 1.6:
-Write a method to replace all spaces in the input string with '__'
-Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+- Code commented. To recap on this, we play within a while loop with two indexes. Incrementing one index when difference found. When second difference found if Index is already different, second difference found. 
+
+## 1.6 String Compression:
+Write a method to perform string compression using the count of repeated characters. For example "aabcccccaaa" become "a2b1c5a3".
+If the new string is not smaller than the original one, the method should return the original string.
 
 SOLUTION:
-- In my approach I did use a char[], gave it the new dimension and played with the index.
-- Added Unit Tests project "1.3 URLify_UT"
+- It's a boring solution, a for loop where within we look to the next char, if the same we increment a count of the consecutive. When a difference in place we build part of the new string with specific char and occurrency.
+  - In demo the solution implemented is the second presented by the book.
 
 ## 1.7:
 Write a method to replace all spaces in the input string with '__'

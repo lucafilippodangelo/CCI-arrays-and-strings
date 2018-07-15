@@ -6,7 +6,11 @@ namespace _1._6_String_Compression
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            const string original = "abbccccccde";
+            var compressed = Implementation.CompressBetter(original);
+            Console.WriteLine("Original  : {0}", original);
+            Console.WriteLine("Compressed: {0}", compressed);
+            Console.ReadLine();
         }
     }
 }
