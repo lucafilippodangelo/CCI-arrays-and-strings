@@ -58,6 +58,7 @@ SOLUTION:
 - EASY: use an array big as the alphabet to count how many time each character appears, then iterate through the hash table and ensure that at most just one character has odd count.
 - ELEGANT: Using bit manipulation. We don't need to know the count, it's enough to know if the count is even or odd. 
 The idea is to flip a toggle on or off each time the state change. Whe can't know how many flips but we will know if at the end we have an odd count
+- Added Unit Tests project "1.4 Palindrome and Permutation_UT"
 
 Useful:
 - Find all the permutations of a given string: https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
@@ -67,3 +68,45 @@ Useful:
   - Bit Manipulation http://www.anotherchris.net/csharp/csharp-bit-manipulation-by-example-part-2/
   - https://www.i-programmer.info/programming/c/1281-c-bit-bashing-the-bitconverter.html
   - https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/left-shift-operator
+  
+## 1.5 One Way:
+Considering the possibility to add, remove or edit a character in strings. Given two input strings write a method to check if they are max one edit away.
+Example: 
+pale, ple -> true
+pales, pale -> true
+pale, bale -> true
+pale, bae -> false
+
+SOLUTION:
+- Code commented
+## 1.6:
+Write a method to replace all spaces in the input string with '__'
+Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+
+SOLUTION:
+- In my approach I did use a char[], gave it the new dimension and played with the index.
+- Added Unit Tests project "1.3 URLify_UT"
+
+## 1.7:
+Write a method to replace all spaces in the input string with '__'
+Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+
+SOLUTION:
+- In my approach I did use a char[], gave it the new dimension and played with the index.
+- Added Unit Tests project "1.3 URLify_UT"
+
+## 1.8:
+Write a method to replace all spaces in the input string with '__'
+Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+
+SOLUTION:
+- In my approach I did use a char[], gave it the new dimension and played with the index.
+- Added Unit Tests project "1.3 URLify_UT"
+
+## 1.9:
+Write a method to replace all spaces in the input string with '__'
+Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+
+SOLUTION:
+- In my approach I did use a char[], gave it the new dimension and played with the index.
+- Added Unit Tests project "1.3 URLify_UT"
