@@ -89,13 +89,30 @@ SOLUTION:
 - It's a boring solution, a for loop where within we look to the next char, if the same we increment a count of the consecutive. When a difference in place we build part of the new string with specific char and occurrency.
   - In demo the solution implemented is the second presented by the book.
 
-## 1.7:
-Write a method to replace all spaces in the input string with '__'
-Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+## 1.7 Rotate Matrix:
+Given in input an NxN matrix. Write a method to rotate the matrix sides 90 degrees.
+
+Example:
+
+            /* 
+             * //LD input matrix
+             1   2   3   4
+             12  1   1   5
+             11  1   1   6
+             10  9   8   7
+             */
+
+            /* 
+             * //LD expected output matrix
+             10  11  12  1
+             9   1   1   2
+             8   1   1   3
+             7   6   5   4
+             */
 
 SOLUTION:
-- In my approach I did use a char[], gave it the new dimension and played with the index.
-- Added Unit Tests project "1.3 URLify_UT"
+- Easy: 
+
 
 ## 1.8:
 Write a method to replace all spaces in the input string with '__'
