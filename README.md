@@ -111,18 +111,19 @@ Example:
              */
 
 SOLUTION:
-- Easy: 
+- Easy: Swap index by index on each layer
 
 
-## 1.8:
-Write a method to replace all spaces in the input string with '__'
-Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
+## 1.8 Zero Matrix:
+Write an algorithm such that if an element on a MxN matrix is 0, its entire row and column are set to zero
 
 SOLUTION:
-- In my approach I did use a char[], gave it the new dimension and played with the index.
-- Added Unit Tests project "1.3 URLify_UT"
+- first possible solution: could be have a second matrix, flag the zero and then do a second pass through to se tthe zeros
+- second possible solution: use two array to store index of row and column having zero, at the end we don't neex to use a matrix in order to know the exact position. Then nullify rows and columns based on the values in the arrays.
+- thirt possible solution: use first row and first column as replacement for the arrays.
 
-## 1.9:
+
+## 1.9 String Rotation:
 Write a method to replace all spaces in the input string with '__'
 Note: the suggestion whe manipulating strings is to edit the string starting from the end and working backwards
 
