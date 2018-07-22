@@ -39,20 +39,26 @@ EXAMPLE Palindrome, the word is the same forward and backwards:
 - racecar
 
 EXAMPLE Permutation of "abc":
-- abc
-- acb
-- bac
-- bca
-- cba
-- cab
+
+```
+	abc
+	acb
+	bac
+	bca
+	cba
+	cab
+```
 
 EXAMPLE this is a permutation of a palindrome:
 the given string "tactcoapapa" is a palindrome permutation, because is composed by:
-- #2 "t"
-- #2 "c"
-- #2 "p"
-- #4 "a"
-- #1 "o" -> only one odd
+
+```
+	#2 "t"
+	#2 "c"
+	#2 "p"
+	#4 "a"
+	#1 "o" -> only one odd
+```
 
 SOLUTION:
 - EASY: use an array big as the alphabet to count how many time each character appears, then iterate through the hash table and ensure that at most just one character has odd count.
