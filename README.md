@@ -146,12 +146,14 @@ Assuming I have a method "isSubstring" which checks if one word is substring of 
 Given two strings "S1" and "S2" write the code to check if "S2" is a rotation of "S1", using only one call to "isSubstring"
 
 SOLUTION:
+
 /*
-S1 = XY = waterbottle
-X = wat 
-Y = erbottle
-S2 = YX = erbottlewat (it's a counterclockwise rotation)
+	S1 = XY = waterbottle
+	X = wat 
+	Y = erbottle
+	S2 = YX = erbottlewat (it's a counterclockwise rotation)
 */
+
 Regardless of where the split between X and Y is, YX will be allways a substring of XYXY, so S2 will be allways substring od S1S1.
 
 
