@@ -147,12 +147,12 @@ Given two strings "S1" and "S2" write the code to check if "S2" is a rotation of
 
 SOLUTION:
 
-/*
+```
 	S1 = XY = waterbottle
 	X = wat 
 	Y = erbottle
 	S2 = YX = erbottlewat (it's a counterclockwise rotation)
-*/
+```
 
 Regardless of where the split between X and Y is, YX will be allways a substring of XYXY, so S2 will be allways substring od S1S1.
 
